@@ -16,7 +16,7 @@ export default function Home() {
     <main className={styles.main}>
       <h1 className={styles.title}>kndrstudio</h1>
       <p className={styles.tagline}>{t('home.tagline')}</p>
-      <nav className={styles.sections}>
+      <nav className={styles.sections} aria-label="sections">
         {sections.map(({ key, path }) => (
           <Link key={key} to={path} className={styles.sectionLink}>
             {t(`nav.${key}`)}
