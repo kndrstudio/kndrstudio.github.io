@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "art": "Art",
+    "music": "Music",
+    "poetry": "Poetry",
+    "teaching": "Teaching"
+  },
+  "home": {
+    "tagline": "Archive"
+  },
+  "common": {
+    "back": "← Back",
+    "tags": "Tags",
+    "date": "Date",
+    "sortByDate": "Date",
+    "sortByTitle": "Title"
+  },
+  "art": {
+    "title": "Art",
+    "project": "Project",
+    "piece": "Piece"
+  },
+  "music": {
+    "title": "Music",
+    "album": "Album",
+    "track": "Track",
+    "play": "Play",
+    "pause": "Pause"
+  },
+  "poetry": {
+    "title": "Poetry"
+  },
+  "teaching": {
+    "title": "Teaching"
+  }
+}
