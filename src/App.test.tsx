@@ -15,7 +15,7 @@ function renderAt(path: string) {
 describe('routing', () => {
   it('renders home at /', () => {
     renderAt('/')
-    expect(screen.getByRole('navigation')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'main navigation' })).toBeInTheDocument()
   })
 
   it('renders art index at /art', () => {
