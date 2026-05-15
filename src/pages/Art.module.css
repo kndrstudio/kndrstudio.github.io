@@ -1,0 +1,87 @@
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.description {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+  max-width: 60ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover .cardTitle {
+  text-decoration: underline;
+}
+
+.cover {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--color-border);
+}
+
+.cardInfo {
+  padding: var(--spacing-xs) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+}
+
+.cardMeta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.thumbBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--color-border);
+}
+
+.thumbCaption {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  padding-top: var(--spacing-xs);
+}
