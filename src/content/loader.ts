@@ -1,11 +1,20 @@
-import matter from 'gray-matter'
+import { parse as parseYaml } from 'yaml'
 import type {
   ArtPiece, ArtProject, StandaloneArtPiece, ArtItem,
   Track, Album, StandaloneTrack, MusicItem,
   Poem, TeachingEntry,
 } from './types'
 
-// ─── Helper ──────────────────────────────────────────────────────────────────
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+function matter(raw: string): { data: Record<string, unknown>; content: string } {
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
+  if (!match) return { data: {}, content: raw.trim() }
+  return {
+    data: (parseYaml(match[1]) as Record<string, unknown>) ?? {},
+    content: match[2].trim(),
+  }
+}
 
 function toDateString(value: unknown): string {
   if (value instanceof Date) return value.toISOString().slice(0, 10)
