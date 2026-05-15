@@ -12,7 +12,7 @@ import {
 
 const POEM_EN = `---
 title: "March"
-date: 2024-03-15
+date: "2024-03-15"
 tags:
   - spring
 ---
@@ -35,7 +35,7 @@ duration: "3:42"
 const ALBUM_INDEX = `---
 title: "Slow Hours"
 title_ru: "Медленные Часы"
-date: 2024-06-01
+date: "2024-06-01"
 tags:
   - ambient
 description: "An album about stillness"
@@ -50,7 +50,7 @@ description: "Pencil on paper"
 const ART_PROJECT_INDEX = `---
 title: "Field Studies"
 title_ru: "Полевые Этюды"
-date: 2024-03-01
+date: "2024-03-01"
 cover: /images/art/field-studies/cover.jpg
 tags:
   - painting
@@ -59,7 +59,7 @@ description: "A series of landscape studies"
 
 const STANDALONE_PIECE = `---
 title: "Quiet Field"
-date: 2024-03-01
+date: "2024-03-01"
 image: /images/art/quiet-field.jpg
 description: "Oil on canvas"
 tags:
@@ -68,7 +68,7 @@ tags:
 
 const STANDALONE_TRACK = `---
 title: "Drift"
-date: 2024-05-10
+date: "2024-05-10"
 audio: "https://example.com/drift.mp3"
 description: "Ambient piano"
 tags:

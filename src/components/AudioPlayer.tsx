@@ -23,7 +23,7 @@ export default function AudioPlayer({ title, src, duration, trackNumber }: Audio
       audio.pause()
       setPlaying(false)
     } else {
-      audio.play().then(() => setPlaying(true))
+      audio.play().then(() => setPlaying(true)).catch(() => {})
     }
   }
 

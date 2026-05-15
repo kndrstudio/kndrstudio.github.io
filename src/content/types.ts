@@ -11,7 +11,7 @@ export interface ArtProject {
   title: string
   title_ru?: string
   date: string
-  cover: string
+  cover?: string
   description?: string
   description_ru?: string
   tags: string[]
