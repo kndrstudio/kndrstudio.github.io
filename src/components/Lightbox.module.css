@@ -1,0 +1,17 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  cursor: zoom-out;
+}
+
+.image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  cursor: default;
+}
