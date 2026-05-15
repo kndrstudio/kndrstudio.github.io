@@ -34,7 +34,7 @@ A personal creative archive site for kndrstudio, hosted on GitHub Pages. Four se
 | `/art/:project` | Art project — image gallery/slideshow |
 | `/music` | Music index — list of albums and standalone tracks |
 | `/music/:album` | Album page — track listing with inline audio player |
-| `/poetry` | Poetry index — paginated/alphabetical list of poems |
+| `/poetry` | Poetry index — list of poems sorted by date descending (alphabetical toggle available) |
 | `/poetry/:slug` | Individual poem — full-text readable view |
 | `/teaching` | Teaching — static services and courses presentation |
 
@@ -182,6 +182,8 @@ typescript
 ```
 
 **`import.meta.glob`** loads all `.md` files from `/content` at build time. `gray-matter` parses frontmatter. No runtime API calls — all content is bundled statically.
+
+**`404.html`** — a small redirect script that encodes the current path and forwards to `index.html`. Committed to `/public/404.html` so Vite includes it in the build output.
 
 **GitHub Actions** (`.github/workflows/deploy.yml`):
 - Trigger: push to `main`
