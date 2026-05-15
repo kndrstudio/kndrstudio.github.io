@@ -1,0 +1,36 @@
+.list {
+  list-style: none;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.link {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--color-text-muted);
+}
+
+.title {
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}

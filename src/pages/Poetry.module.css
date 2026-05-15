@@ -1,0 +1,42 @@
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.poem {
+  max-width: 40ch;
+}
+
+.poemTitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-xs);
+}
+
+.poemDate {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.poemBody {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

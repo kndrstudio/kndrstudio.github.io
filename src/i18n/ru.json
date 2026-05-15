@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "art": "Искусство",
+    "music": "Музыка",
+    "poetry": "Поэзия",
+    "teaching": "Обучение"
+  },
+  "home": {
+    "tagline": "Архив"
+  },
+  "common": {
+    "back": "← Назад",
+    "tags": "Теги",
+    "date": "Дата",
+    "sortByDate": "По дате",
+    "sortByTitle": "По названию"
+  },
+  "art": {
+    "title": "Искусство",
+    "project": "Проект",
+    "piece": "Работа"
+  },
+  "music": {
+    "title": "Музыка",
+    "album": "Альбом",
+    "track": "Трек",
+    "play": "Воспроизвести",
+    "pause": "Пауза"
+  },
+  "poetry": {
+    "title": "Поэзия"
+  },
+  "teaching": {
+    "title": "Обучение"
+  }
+}
